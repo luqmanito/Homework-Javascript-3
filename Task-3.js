@@ -1,18 +1,19 @@
 // PROGRAM 1
 
 // const testLuck = new Promise((resolve, reject) => {
-//     if (Math.random() < 0.5) { 
-//       resolve('Lucky winner!')
+//     if (Math.random() < 0.5) {
+//         resolve('Lucky winner!')
 //     } else {
-//       reject(new Error('Unlucky!'))
+//         reject(new Error('Unlucky!'))
 //     }
-//   });
+// });
 
-//   testLuck.then(message => {
-//     console.log(message) 
-//   }).catch(err => {
-//     console.error(err.message) 
-//   });
+// testLuck
+//     .then(message => {
+//         console.log(message)
+//     }).catch(err => {
+//         console.error(err.message)
+//     });
 
 
 
