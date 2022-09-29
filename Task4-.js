@@ -1,15 +1,14 @@
+const fetchAPI = fetch("https://jsonplaceholder.typicode.com/users");
 
+const promise = fetchAPI.then(res => {
+  return res.json()
+});
 
-fetch('https://jsonplaceholder.typicode.com/users')
-    .then((response) => {
-        return response.json();
+promise.then(data => {
+    data.map(data => {
+        console.log(data.name)
     })
-    .then((data) => {
-        let authors = data;
-        authors.map(function (author) {
-            console.log(author.name)
-        })
-    })
-    .catch(err => {
-        console.error(err.message);
-    })
+})
+.catch(err => {
+    console.error(err.message);
+})
