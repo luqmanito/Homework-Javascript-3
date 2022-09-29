@@ -5,9 +5,8 @@ const promise = fetchAPI.then(res => {
 });
 
 promise.then(data => {
-    data.map(data => {
-        console.log(data.name)
-    })
+    const showedData = data.map(data => data.name)
+    console.log(showedData)
 })
 .catch(err => {
     console.error(err.message);
